@@ -98,6 +98,7 @@
 		<!-- GUIObject properties -->
 		<KeyWord name="AlignmentX" func = "no"></KeyWord>
 		<KeyWord name="AlignmentY" func = "no"></KeyWord>
+		<KeyWord name="BackgroundColor" func = "no"></KeyWord>
 		<KeyWord name="CheckColor" func = "no"></KeyWord>
 		<KeyWord name="CheckHighlightedColor" func = "no"></KeyWord>
 		<KeyWord name="Color" func = "no"></KeyWord>
@@ -116,7 +117,7 @@
 			<Overload retVal = "Socket: acceptedConnection" descr="Socket method. Accept a connecting socket. Returns the socket or nil if there are none.">
 			</Overload>
 		</KeyWord>
-		<KeyWord name="addObject" func = "yes">
+		<KeyWord name="addObject" func = "yes"> <!-- DEPRECATED -->
 			<Overload retVal = "void" descr="GUI method. Add a new object to be rendered inside a GUI">
 				<Param name="GUIObject: object"/>
 			</Overload>
@@ -287,12 +288,12 @@ metamethod, or an iterator. Any arguments to yield are passed as extra results t
 				<Param name = "bool: displayFramerate"/>
             </Overload>
 		</KeyWord>
-		<KeyWord name="Debug.displayScreenLogs" func = "yes">
+		<KeyWord name="Debug.displayScreenLogs" func = "yes"> <!-- DEPRECATED REMOVED -->
 			<Overload retVal="void" descr="Deprecated. Enable or disable the screen logs, disabled by default">
 				<Param name = "bool: displayScreenLogs"/>
             </Overload>
 		</KeyWord>
-		<KeyWord name="Debug.displayTileInfo" func = "yes">
+		<KeyWord name="Debug.displayTileInfo" func = "yes"> <!-- DEPRECATED REMOVED -->
 			<Overload retVal="void" descr="Deprecated. Enable or disable info about hovered tiles, disabled by default">
 				<Param name = "bool: displayTileInfo"/>
             </Overload>
@@ -303,12 +304,12 @@ metamethod, or an iterator. Any arguments to yield are passed as extra results t
 				<Param name = "Function: delayedFunc"/>
             </Overload>
 		</KeyWord>
-		<KeyWord name="displayMessage" func = "yes">
+		<KeyWord name="displayMessage" func = "yes"> <!-- DEPRECATED REMOVED -->
 			<Overload retVal="void" descr = "Deprecated. Display the message on screen">
 				<Param name = "string: message"/>
             </Overload>
 		</KeyWord>
-		<KeyWord name="displayMessageWithTime" func = "yes">
+		<KeyWord name="displayMessageWithTime" func = "yes"> <!-- DEPRECATED REMOVED -->
 			<Overload retVal="void" descr = "Deprecated. Display the message on screen in the specified amount of time">
 				<Param name = "string: message, float: time"/>
             </Overload>
@@ -410,12 +411,12 @@ field, returns the associated value. Otherwise, returns the metatable of the giv
 				<Param name = "string: objectType"/>
             </Overload>
 		</KeyWord>
-		<KeyWord name="GUI.register" func = "yes">
+		<KeyWord name="GUI.register" func = "yes"> <!-- DEPRECATED REMOVED -->
 			<Overload retVal="void" descr = "Register the GUI to be rendered">
 				<Param name = "GUI: guiToRegister"/>
             </Overload>
 		</KeyWord>
-		<KeyWord name="GUI.unregister" func = "yes">
+		<KeyWord name="GUI.unregister" func = "yes"> <!-- DEPRECATED REMOVED -->
 			<Overload retVal="void" descr = "Remove a GUI">
 				<Param name = "GUI: guiToUnregister"/>
             </Overload>
@@ -999,7 +1000,7 @@ This function returns table.
 				<Param name="number: opacity"/>
 			</Overload>
 		</KeyWord>
-        <KeyWord name="removeObject" func = "yes">
+        <KeyWord name="removeObject" func = "yes"> <!-- DEPRECATED REMOVED -->
 			<Overload retVal = "void" descr="GUI method. Remove a GUIObject from a GUI">
 				<Param name="GUIObject: object"/>
 			</Overload>
